@@ -1,0 +1,39 @@
+version: "2"
+services:
+  awd1:
+    build: .
+    image: awd
+    restart: always
+    ports:
+      - "10080:80"
+      - "10022:22"
+  awd2:
+    image: awd
+    restart: always
+    ports:
+      - "10081:80"
+      - "10023:22"
+  awd3:
+    image: awd
+    restart: always
+    ports:
+      - "10082:80"
+      - "10024:22"
+  awd4:
+    image: awd
+    restart: always
+    ports:
+      - "10083:80"
+      - "10025:22"
+  awd5:
+    image: awd
+    restart: always
+    ports:
+      - "10084:80"
+      - "10026:22"
+  awd6:
+    image: awd
+    restart: always
+    ports:
+      - "10085:80"
+      - "10027:22"
