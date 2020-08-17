@@ -37,7 +37,7 @@ RUN chmod 755 /start.sh
 
 # www目录 非root不可写
 RUN chmod 755 -R /var/www/html/ && chown ctf:ctf -R /var/www/html/
-RUN chmod 777 -R /var/www/html/uploads/
+RUN mkdir /var/www/html/uploads && chmod 777 -R /var/www/html/uploads/
 CMD /start.sh
 
 # Expose ports.
